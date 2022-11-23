@@ -277,7 +277,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 })
 
             // request.send(json);
-
             // request.addEventListener('load', () => {
             //     if (request.status === 200 || request.status === 405) {
 
@@ -313,5 +312,9 @@ window.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }, 4000);
     }
+
+    fetch('http://localhost:3000/menu')
+        .then(data => data.json())
+        .then(res => console.log(res));
 
 });
