@@ -45,8 +45,8 @@ function calc() {
         });
     }
 
-    initLocalSettings('#gender div', 'calculating__choose-item_active');
     initLocalSettings('.calculating__choose_big div', 'calculating__choose-item_active');
+    initLocalSettings('#gender div', 'calculating__choose-item_active');
 
     function getStaticInformation(selector, activeClass) {
         const elements = document.querySelectorAll(selector);
@@ -105,4 +105,4 @@ function calc() {
     getDynamicInformation('#age');
 }
 
-module.exports = calc;
+export default calc;
